@@ -1,0 +1,359 @@
+/* CSS Document */
+
+header{
+	position: relative;
+	
+	background-image: url("../images/background/success.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	color: white;
+	text-shadow: 2px 2px 50px black;
+}
+
+header::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);	
+}
+
+header nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	margin: 20px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+header nav img{
+	width: 48px;
+	height: 48px;
+}
+
+header h1{
+	z-index: 1;
+	text-align: center;
+}
+
+header h1 strong{
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 0px;
+	letter-spacing: 2px;
+}
+
+header h1 em{
+	letter-spacing: 1px;
+}
+
+/* IDs */
+
+#info h1{
+	text-transform: uppercase;
+}
+
+#main{
+	margin: 120px 180px;
+	text-align: center;
+}
+
+#main h1{
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-decoration: overline;
+	text-decoration-style: solid;
+	
+	line-height: 0.5em;
+}
+
+#main p{
+	font-size: 1.3em;
+}
+
+#finance{
+	margin: 5% 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+
+#finance strong{
+	color: black;
+	font-style: normal;
+	font-weight: normal;
+}
+
+#finance h2{
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 0;
+}
+
+#finance img{
+	width: 48px;
+	height: 48px;
+	margin-right: 16px;
+}
+
+#finance > div{
+	display: flex;
+	align-items: center;
+	width: 300px;
+	margin: 20px;
+	padding: 16px;
+	box-shadow: lightgrey 5px 5px 5px;
+	transition: ease-out 300ms;
+}
+
+#finance > div:hover{
+	box-shadow: lightgrey 5px 5px 15px;
+}
+
+#finance > div > div{
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+}
+
+#followed, #unfollowed{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+#followed h2, #unfollowed h2{
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+#followed > div, #unfollowed > div{
+	width: 290px;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 5px lightgrey;
+	transition: ease-out 300ms;
+}
+
+#followed p, #unfollowed p,
+#followed h2, #unfollowed h2{
+	margin: 5px;
+}
+
+#followed > div:hover, #unfollowed > div:hover{
+	box-shadow: 15px 10px 20px lightgrey;
+
+}
+
+#followed div > div, #unfollowed div > div{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 10px;
+}
+
+#news{
+	padding: 40px 20px;
+	position: relative;
+}
+
+#news h1{
+	text-transform: uppercase;
+}
+
+#news h2{
+	text-transform: uppercase;
+	font-size: 1em;
+	height: 67px;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* CLASSI */
+
+header h1 .buttonWhite1{
+	font-size: 0.65em;
+	padding: 0px 50px;
+}
+
+.horizzontal{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.b_container{
+	display: flex;
+	align-items: center;
+}
+
+.articles_shelf{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+.article{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 300px;
+	margin: 0px 20px;
+	padding: 10px 10px;
+	box-shadow: lightgrey 5px 5px 5px;
+	transition: ease-out 300ms;
+}
+
+.article:hover{
+	box-shadow: lightgrey 5px 5px 15px;
+}
+
+.article img{
+	width: 100%;
+	height: 150px;
+}
+
+.article em{
+	color: black;
+	text-align: right;
+	font-size: 0.7em;
+	margin-bottom: 5px;
+}
+
+.article p{
+	height: 125px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	text-align: left;
+	padding: 0px 10px;
+}
+
+.finndata{
+	display: flex;
+	justify-content: space-between;
+}
+
+.finndeets{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.input_text {
+	padding: 5px 15px;
+	border: none;
+	border-bottom: 1px solid black;
+	height: fit-content;
+	transition: ease-out 200ms;
+}
+
+.input_text:focus {
+	border: 3px solid black;
+	outline: none;
+}
+
+.product_button{
+	background-color: transparent;
+	padding: 5px 10px;
+	border: 2px solid black;
+	margin: 0px 2px;
+
+	font-weight: bolder;
+	text-transform: uppercase;
+	transition: ease 400ms;
+}
+
+.product_button:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+/* Media Query */
+
+@media(max-width: 500px){
+
+	#links{
+		display: none;
+	}
+
+	#menu{
+		display: block;
+	}
+	
+	#main{
+		margin: 4em 1em;
+	}
+	
+	#details{
+		padding: 0px;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	#details div{
+		width: 90%;
+		margin: 30px;
+	}
+	
+	#details div img{
+		width: 50%;
+	}
+
+	header{
+		height: 450px;
+	}
+
+	header h1 strong{
+		font-size: 1em;
+	}
+
+	footer{
+		padding: 5%;
+		font-size: 0.8em;
+	}
+
+	footer img{
+		width: 38px;
+		height: 38px;
+	}
+	
+}

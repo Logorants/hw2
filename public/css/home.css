@@ -1,0 +1,195 @@
+/* CSS Document */
+
+header {
+    position: relative;
+
+    background-image: url("../images/background/success.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-shadow: 2px 2px 50px black;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    margin: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header nav img {
+    width: 48px;
+    height: 48px;
+}
+
+header h1 {
+    z-index: 1;
+    text-align: center;
+}
+
+header h1 strong {
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 0px;
+    letter-spacing: 2px;
+}
+
+header h1 em {
+    letter-spacing: 1px;
+}
+
+/* IDs */
+
+#info h1 {
+    text-transform: uppercase;
+}
+
+#main {
+    margin: 120px 180px;
+    text-align: center;
+}
+
+#main h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-decoration: overline;
+    text-decoration-style: solid;
+
+    line-height: 0.5em;
+}
+
+#main p {
+    font-size: 1.3em;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 40px;
+    margin: 5%;
+}
+
+#details div {
+    height: 100%;
+    width: calc(25% - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#details div img {
+    width: 70%;
+    border-radius: 40px;
+}
+
+#details div h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1em;
+    text-align: center;
+}
+
+#details div p {
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#menu {
+    display: none;
+}
+
+/* CLASSI */
+
+header h1 .buttonWhite1 {
+    font-size: 0.65em;
+    padding: 0px 50px;
+}
+
+/* Media Query */
+
+@media (max-width: 500px) {
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #main {
+        margin: 4em 1em;
+    }
+
+    #main p{
+        font-size: 1.2em;
+    }
+
+    #details {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #details div {
+        width: 90%;
+        margin: 30px;
+    }
+
+    #details div img {
+        width: 50%;
+    }
+
+    header{
+        height: 450px;
+    }
+
+    header h1 strong{
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 5%;
+        font-size: 0.8em;
+    }
+
+    footer img {
+        width: 38px;
+        height: 38px;
+    }
+
+}

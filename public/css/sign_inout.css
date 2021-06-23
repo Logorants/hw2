@@ -1,0 +1,216 @@
+/* CSS Document */
+
+section {
+    position: relative;
+    height: 100vh;
+
+    background-image: url("../images/background/success.jpg");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30%;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+nav img {
+    width: 48px;
+    height: 48px;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+span{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 5px 0;
+}
+
+span a{
+    color: black;
+    transition: ease 400ms;
+}
+
+span a:hover{
+    color: mediumaquamarine;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px black;
+    text-align: right;
+    font-size: 2.5em;
+
+    width: 40%;
+    margin: 0 50px;
+    z-index: 1;
+}
+
+/* IDs */
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+#sign_div{
+    height: 96vh;
+    width: 35%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    box-shadow: black 2px 2px 20px;
+
+    z-index: 1;
+}
+
+#sign_div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 65%;
+    margin: 20px;
+}
+
+#sign_div h1{
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+/* CLASSI */
+
+header h1 .buttonWhite1 {
+    font-size: 0.65em;
+    padding: 0px 50px;
+}
+
+.input_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input_txt{
+    outline: mediumaquamarine;
+    border: 2px solid black;
+    width: 170px;
+}
+
+.logo_64{
+    height: 64px;
+    width: 64px;
+    margin: 16px;
+}
+
+.error{
+    background-color: lightpink;
+    color: darkred;
+    padding: 2px 10px;
+    width: fit-content;
+}
+
+.error p{
+    text-align: left;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.input_error{
+    background-color: lightpink;
+    border-color: darkred;
+}
+
+/* Media Query */
+
+@media (max-width: 500px) {
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #sign_div{
+        width: 100%;
+    }
+
+    .sign_in{
+        height: 100vh!important;
+    }
+
+    .sign_up{
+        height: max-content!important;
+    }
+
+    .input_div{
+        flex-direction: column;
+    }
+
+    .input_txt{
+        width: auto;
+    }
+
+    h1{
+        display: none;
+    }
+
+    footer {
+        padding: 5%;
+        font-size: 0.8em;
+    }
+
+    footer img {
+        width: 38px;
+        height: 38px;
+    }
+
+}
