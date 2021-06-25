@@ -5,12 +5,14 @@
 @endsection
 
 @section('scripts')
-{{--    <script src="{{ asset('js/signup_check.js') }}" defer></script>--}}
+    <script src="{{ asset('js/signup_check.js') }}" defer></script>
 @endsection
 
 @section('welcome_message')
     Registrati adesso al servizio: il primo mese è gratis!
 @endsection
+
+{{--TODO: Garantire l'accesso pure ai guest per visionare la home--}}
 
 @section('form_div')
     <div id="sign_div" class="sign_up">
@@ -67,14 +69,9 @@
             <span>Sei già registrato? <a href="{{ route('login') }}">Clicca qui per il login</a>!</span>
         </form>
 
+        {{--TODO: Rimuovere l'array degli errori lato server dal controller--}}
 
-        <div class="error{{ $class = (isset($error)) ? "" : " hidden" }}">
-            @isset($error)
-                @foreach($error as $err)
-                    <p>{{ $err }}</p>
-                @endforeach
-            @endisset
-        </div>
+        <div class="error hidden"></div>
 
     </div>
 @endsection

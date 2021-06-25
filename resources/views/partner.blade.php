@@ -17,14 +17,9 @@
 @endsection
 
 @section('desc_main')
-    Controlla in tempo reale la situazione finanziaria dei nostri partner e le news sul mondo dell'e-commerce
+    Controlla in tempo reale la situazione finanziaria dei nostri partner e esamina le loro generalità
 @endsection
 
 @section('content')
     <div id="finance"></div>
-
-    <div id="news">
-        <h1>articoli</h1>
-        <div class="articles_shelf"></div>
-    </div>
 @endsection

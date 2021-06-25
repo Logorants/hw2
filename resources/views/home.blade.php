@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
+@section('scripts')
+    <script src="{{ asset('js/home_script.js') }}" defer></script>
+@endsection
+
 @section('title_main')
     mission
 @endsection
@@ -42,5 +46,10 @@
             <p>I dati da noi raccolti rispettano la privacy degli utenti dei nostri partner, non condivideremo mai i
                 dati sensibili dei consumatori</p>
         </div>
+    </div>
+
+    <div id="news">
+        <h1>articoli</h1>
+        <div class="articles_shelf"></div>
     </div>
 @endsection
