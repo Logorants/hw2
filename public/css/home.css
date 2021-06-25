@@ -101,13 +101,15 @@ header h1 em {
 }
 
 #details div {
-    height: 100%;
+    height: 340px;
     width: calc(25% - 60px);
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: lightgray 5px 5px 20px;
 }
 
 #details div img {
@@ -132,11 +134,70 @@ header h1 em {
     display: none;
 }
 
+#news{
+    padding: 40px 20px;
+    position: relative;
+}
+
+#news h1{
+    text-transform: uppercase;
+}
+
+#news h2{
+    text-transform: uppercase;
+    font-size: 1em;
+    height: 67px;
+    text-align: center;
+    overflow: hidden;
+}
+
 /* CLASSI */
 
 header h1 .buttonWhite1 {
     font-size: 0.65em;
     padding: 0px 50px;
+}
+
+.articles_shelf{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    margin: 0px 20px;
+    padding: 10px 10px;
+    box-shadow: lightgrey 5px 5px 5px;
+    transition: ease-out 300ms;
+}
+
+.article:hover{
+    box-shadow: lightgrey 5px 5px 15px;
+}
+
+.article img{
+    width: 100%;
+    height: 150px;
+}
+
+.article em{
+    color: black;
+    text-align: right;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+.article p{
+    height: 125px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0px 10px;
 }
 
 /* Media Query */

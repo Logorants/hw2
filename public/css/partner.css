@@ -2,17 +2,17 @@
 
 header{
 	position: relative;
-	
+
 	background-image: url("../images/background/success.jpg");
 	background-position: center;
 	background-size: cover;
 	height: 600px;
-	
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
+
 	color: white;
 	text-shadow: 2px 2px 50px black;
 }
@@ -24,7 +24,7 @@ header::before{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(0,0,0,0.3);	
+	background-color: rgba(0,0,0,0.3);
 }
 
 header nav{
@@ -32,14 +32,14 @@ header nav{
 	top: 0;
 	left: 0;
 	right: 0;
-	
+
 	margin: 20px;
-	
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	
+
 	text-transform: uppercase;
 	font-size: 1em;
 	font-weight: bold;
@@ -82,7 +82,7 @@ header h1 em{
 	font-size: 2.5em;
 	text-decoration: overline;
 	text-decoration-style: solid;
-	
+
 	line-height: 0.5em;
 }
 
@@ -91,7 +91,7 @@ header h1 em{
 }
 
 #finance{
-	margin: 5% 10%;
+	margin: 10%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -188,23 +188,6 @@ header h1 em{
 	margin: 10px;
 }
 
-#news{
-	padding: 40px 20px;
-	position: relative;
-}
-
-#news h1{
-	text-transform: uppercase;
-}
-
-#news h2{
-	text-transform: uppercase;
-	font-size: 1em;
-	height: 67px;
-	text-align: center;
-	overflow: hidden;
-}
-
 /* CLASSI */
 
 header h1 .buttonWhite1{
@@ -222,48 +205,6 @@ header h1 .buttonWhite1{
 .b_container{
 	display: flex;
 	align-items: center;
-}
-
-.articles_shelf{
-	display: flex;
-	justify-content: center;
-	position: relative;
-	width: 100%;
-}
-
-.article{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 300px;
-	margin: 0px 20px;
-	padding: 10px 10px;
-	box-shadow: lightgrey 5px 5px 5px;
-	transition: ease-out 300ms;
-}
-
-.article:hover{
-	box-shadow: lightgrey 5px 5px 15px;
-}
-
-.article img{
-	width: 100%;
-	height: 150px;
-}
-
-.article em{
-	color: black;
-	text-align: right;
-	font-size: 0.7em;
-	margin-bottom: 5px;
-}
-
-.article p{
-	height: 125px;
-	overflow: hidden;
-	margin-bottom: 10px;
-	text-align: left;
-	padding: 0px 10px;
 }
 
 .finndata{
@@ -318,22 +259,22 @@ header h1 .buttonWhite1{
 	#menu{
 		display: block;
 	}
-	
+
 	#main{
 		margin: 4em 1em;
 	}
-	
+
 	#details{
 		padding: 0px;
 		flex-direction: column;
 		justify-content: space-around;
 	}
-	
+
 	#details div{
 		width: 90%;
 		margin: 30px;
 	}
-	
+
 	#details div img{
 		width: 50%;
 	}
@@ -355,5 +296,5 @@ header h1 .buttonWhite1{
 		width: 38px;
 		height: 38px;
 	}
-	
+
 }
