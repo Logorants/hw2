@@ -15,6 +15,6 @@ class HomeController extends Controller
                 'surname' => $user['cognome']
             ]);
         }
-        else return redirect('login');
+        else return view('home');
     }
 }
