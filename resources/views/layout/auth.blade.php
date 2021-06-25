@@ -22,6 +22,7 @@
 
 <section>
     <nav>
+        <a href="{{ route('home') }}"></a>
         <img src="{{ asset('images/logo/ConBoxWhite.png') }}" alt="conbox">
     </nav>
 

@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="{{ asset('js/mobile_sandwich.js') }}" defer></script>
     @yield('style')
@@ -23,12 +24,19 @@
     <nav>
         <img src="{{ asset('images/logo/ConBoxWhite.png') }}" alt="conbox">
 
-        <div id="links">
-            <a href="{{ route('login') }}" class="header_link">home</a>
-            <a href="{{ route('servizi') }}" class="header_link">servizi</a>
-            <a href="{{ route('partner') }}" class="header_link">partner</a>
-            <a href="{{ route('logout') }}" class="header_link buttonWhite1">logout</a>
-        </div>
+        @if(session('user'))
+            <div id="links">
+                <a href="{{ route('login') }}" class="header_link">home</a>
+                <a href="{{ route('servizi') }}" class="header_link">servizi</a>
+                <a href="{{ route('partner') }}" class="header_link">partner</a>
+                <a href="{{ route('logout') }}" class="header_link buttonWhite1">logout</a>
+            </div>
+        @else
+            <div id="links">
+                <a href="{{ route('register') }}" class="header_link">registrati</a>
+                <a href="{{ route('login') }}" class="header_link buttonWhite1">login</a>
+            </div>
+        @endif
 
         <div id="menu">
             <div></div>
@@ -41,7 +49,9 @@
     <h1>
         <strong>conbox marketing services</strong><br/>
         <em>Massimizza le vendite col minimo sforzo</em><br/>
-        <strong class='welcome'>Bentornato/a {{ $name." ".$surname }}</strong>
+        @if(session('user'))
+            <strong class='welcome'>Bentornato/a {{ $name." ".$surname }}</strong>
+        @endif
     </h1>
 
 </header>
