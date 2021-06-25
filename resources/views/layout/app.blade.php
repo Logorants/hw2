@@ -22,7 +22,9 @@
 <body>
 <header>
     <nav>
-        <img src="{{ asset('images/logo/ConBoxWhite.png') }}" alt="conbox">
+        <a href="{{ route('home') }}">
+            <img src="{{ asset('images/logo/ConBoxWhite.png') }}" alt="conbox">
+        </a>
 
         @if(session('user'))
             <div id="links">
