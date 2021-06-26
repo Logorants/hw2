@@ -41,16 +41,4 @@ class PartnerController extends Controller
         return response()->json($json);
 
     }
-
-    public function search_news(): Response
-    {
-        $endpoint = "https://newsapi.org/v2/everything";
-
-        return Http::get($endpoint, [
-            'q' => 'ecommerce',
-            'language' => 'it',
-            'pageSize' => 5,
-            'apiKey' => env('NEWSAPI_KEY')
-        ]);
-    }
 }
