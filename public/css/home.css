@@ -110,6 +110,7 @@ header h1 em {
     padding: 20px;
     border-radius: 20px;
     box-shadow: lightgray 5px 5px 20px;
+    transition: background-color 700ms;
 }
 
 #details div img {
@@ -198,6 +199,22 @@ header h1 .buttonWhite1 {
     margin-bottom: 10px;
     text-align: left;
     padding: 0px 10px;
+}
+
+.yellow_bg:hover{
+    background-color: yellow;
+}
+
+.greenyellow_bg:hover{
+    background-color: greenyellow;
+}
+
+.pink_bg:hover{
+    background-color: hotpink;
+}
+
+.blue_bg:hover{
+    background-color: deepskyblue;
 }
 
 /* Media Query */
