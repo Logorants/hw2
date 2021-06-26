@@ -24,23 +24,23 @@
 
 @section('content')
     <div id="details">
-        <div>
+        <div class="pink_bg">
             <img src="{{ asset('images/homepage_info/Money.png') }}" alt="Earn">
             <h1>Earn</h1>
             <p>Guadagna di più grazie ai nostri servizi: trova la piattaforma di e-commerce che più soddisfa le tue
                 esigenze</p>
         </div>
-        <div>
+        <div class="blue_bg">
             <img src="{{ asset('images/homepage_info/Graph.png') }}" alt="Stats">
             <h1>Stats</h1>
             <p>Controlla le statistiche in tempo reale sulle tendenze dei consumatori in un dato periodo</p>
         </div>
-        <div>
+        <div class="greenyellow_bg">
             <img src="{{ asset('images/homepage_info/Handlens.png') }}" alt="Inspect">
             <h1>Inspect</h1>
             <p>Ogni prodotto che vendi oltre ai numeri ha pure una storia, lascia che sia Conbox a tenerne traccia!</p>
         </div>
-        <div>
+        <div class="yellow_bg">
             <img src="{{ asset('images/homepage_info/Data.png') }}" alt="Data">
             <h1>Data</h1>
             <p>I dati da noi raccolti rispettano la privacy degli utenti dei nostri partner, non condivideremo mai i
